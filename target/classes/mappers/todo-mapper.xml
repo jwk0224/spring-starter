@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers.todo-mapper">
+	<select id="readTodos" resultType="starter.vo.TodoVO">
+		select todo_id as todoId,
+			   content,
+			   done
+		from todo;
+	</select> 
+ 	<select id="readTodo" parameterType="int" resultType="starter.vo.TodoVO">
+		select todo_id as todoId,
+			   content,
+			   done
+	    from todo
+	    where todo_id = #{todoId}
+	</select>
+	<insert id="createTodo" parameterType="starter.vo.TodoVO">
+		insert into todo (todo_id, content, done) values (#{todoId}, #{content}, #{done})
+	</insert>
+	<update id="updateTodo" parameterType="starter.vo.TodoVO">
+		update todo
+		<trim prefix="SET" suffixOverrides=",">
+			<if test="content != null">
+				content=#{content},
+			</if>
+			<if test="done != null">
+				done=#{done},
+			</if>
+		</trim>
+		where todo_id=#{todoId}
+	</update>
+	<delete id="deleteTodo" parameterType="int">
+		delete from todo where todo_id=#{todoId}
+	</delete>
+</mapper>
