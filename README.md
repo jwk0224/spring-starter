@@ -34,12 +34,18 @@
 
 4. [MariaDB](https://mariadb.com/downloads/)
 
-        CREATE TABLE `todo` (
-          `todo_id` int(11) NOT NULL,
-          `content` varchar(30) DEFAULT NULL,
-          `done` tinyint(4) DEFAULT NULL,
-          PRIMARY KEY (`todo_id`)
-        )
+		CREATE DATABASE spring;
+
+		CREATE USER 'spring_user'@'localhost' IDENTIFIED BY 'spring_password';
+
+		GRANT ALL PRIVILEGES ON spring.* TO 'spring_user'@'localhost';
+
+		CREATE TABLE `todo` (
+		  `todo_id` int(11) NOT NULL,
+		  `content` varchar(30) DEFAULT NULL,
+		  `done` tinyint(4) DEFAULT NULL,
+		  PRIMARY KEY (`todo_id`)
+		)
 
 5. Spring Tools 3 Add-On (Eclipse Market Place)
 
