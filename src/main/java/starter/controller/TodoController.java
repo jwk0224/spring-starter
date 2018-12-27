@@ -18,6 +18,11 @@ public class TodoController {
 	@Autowired
 	TodoService todoService;
 	
+	@GetMapping("/index")
+	public String index() {
+		return "index";
+	}
+	
 	@GetMapping("/list")
 	public ModelAndView readTodos() {
 		return new ModelAndView("todos").addObject("todos", todoService.readTodos());

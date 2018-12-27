@@ -16,7 +16,7 @@ public class FileUploadController {
 	@PostMapping("/upload")
 	public String uploadFile(@RequestParam("file") MultipartFile file) throws IllegalStateException, IOException {
 		if(!file.isEmpty()) {
-			File f = new File("/Users/username/Downloads", file.getOriginalFilename());
+			File f = new File("/Users/USER_NAME/Downloads", file.getOriginalFilename());
 			file.transferTo(f);
 		}
 		return "ok";
