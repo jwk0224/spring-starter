@@ -1,8 +1,10 @@
 # spring-starter
 
+The standard spring web mvc sample project with essential settings
+
 ## Features
 
-- Spring 5.1.3 web mvc project sample with essential settings
+- Spring 5.1.3
 - Template codes including Controller, Service, DAO, JSP and etc.
 - Dependencies used :
     - Spring & Web
