@@ -38,7 +38,7 @@ The standard spring web mvc sample project with essential settings
 
 4. [Apache Tomcat 8](https://tomcat.apache.org/download-80.cgi)
 
-5. [MariaDB](https://mariadb.com/downloads/)
+5. [MySQL](https://www.mysql.com/downloads/) or [MariaDB](https://mariadb.com/downloads/)
 
 
 
