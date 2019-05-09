@@ -1,7 +1,7 @@
 # spring-starter
 
-> Spring Framework is a Java based open source application framework.
-
+> Spring Framework is a Java based open source application framework
+<br>
 The standard spring web mvc sample project with essential settings
 
 ## Features
@@ -81,7 +81,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
 - [12. Logging](#12-logging)
 
 <a id="maven-project"></a>
-## 1. Maven Project
+### 1. Maven Project
 
 1. *File > New > Dynamic Web Project*
     - Target runtime : Apache tomcat v8.0
@@ -122,7 +122,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
         src/test/java/starter.vo
 
 <a id="spring"></a>
-## 2. Spring
+### 2. Spring
 
 > [spring-context](https://mvnrepository.com/artifact/org.springframework/spring-context)
 
@@ -137,7 +137,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
     ```
 
 <a id="spring-web"></a>
-## 3. Spring Web
+### 3. Spring Web
 
 > [spring-webmvc](https://mvnrepository.com/artifact/org.springframework/spring-webmvc)
 
@@ -197,7 +197,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
 
 8. Delete default code inside `<web-app>` tag in src/main/webapp/WEB-INF/`web.xml`
    
-9.  Add following code inside `<web-app>` tag in `web.xml`
+9. Add following code inside `<web-app>` tag in `web.xml`
 
     ```html
     <!-- Root & Other Context Configuration -->
@@ -241,7 +241,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
     ```
 
 <a id="file-upload"></a>
-## 4. File Upload
+### 4. File Upload
 
 > [commons-fileupload](https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload)
 
@@ -265,7 +265,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
     ```
 
 <a id="json"></a>
-## 5. JSON
+### 5. JSON
 
 >[jackson-databind](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind)
 
@@ -280,7 +280,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
     ```
 
 <a id="jdbc"></a>
-## 6. JDBC
+### 6. JDBC
 
 > [mysql-connector-java ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) (in case of MySQL, MariaDB)
 
@@ -356,7 +356,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
     ```
 
 <a id="mybatis"></a>
-## 7. MyBatis
+### 7. MyBatis
 
 > [mybatis](https://mvnrepository.com/artifact/org.mybatis/mybatis)
 
@@ -434,7 +434,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
     ```
 
 <a id="test"></a>
-## 8. Test
+### 8. Test
 
 > [junit](https://mvnrepository.com/artifact/junit/junit/4.12)
 
@@ -463,7 +463,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
     ```
 
 <a id="aop"></a>
-## 9. AOP
+### 9. AOP
 
 > [spring-aop](https://mvnrepository.com/artifact/org.springframework/spring-aop)
 
@@ -500,7 +500,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
     ```
 
 <a id="transaction"></a>
-## 10. Transaction
+### 10. Transaction
 
 1. Add *aop, tx* in  *Namespaces* tab of `datasource.xml`
 
@@ -525,7 +525,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
     ```
 
 <a id="interceptor"></a>
-## 11. Interceptor
+### 11. Interceptor
 
 - Add following code inside `<beans>` tag in `servlet-context.xml`
 
@@ -543,7 +543,7 @@ Follow step by step guide below to make a standard spring web mvc project manual
     ```
 
 <a id="logging"></a>
-## 12. Logging
+### 12. Logging
 
 > [slf4j-api](https://mvnrepository.com/artifact/org.slf4j/slf4j-api)
 
